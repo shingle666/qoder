@@ -1,0 +1,165 @@
+/* Qoder 品牌色彩 */
+:root {
+  /* 主色调 - 科技蓝 */
+  --qoder-primary: #2563eb;
+  --qoder-primary-light: #3b82f6;
+  --qoder-primary-dark: #1d4ed8;
+  
+  /* 辅助色 */
+  --qoder-secondary: #64748b;
+  --qoder-accent: #06b6d4;
+  --qoder-success: #10b981;
+  --qoder-warning: #f59e0b;
+  --qoder-error: #ef4444;
+  
+  /* 中性色 */
+  --qoder-gray-50: #f8fafc;
+  --qoder-gray-100: #f1f5f9;
+  --qoder-gray-200: #e2e8f0;
+  --qoder-gray-300: #cbd5e1;
+  --qoder-gray-400: #94a3b8;
+  --qoder-gray-500: #64748b;
+  --qoder-gray-600: #475569;
+  --qoder-gray-700: #334155;
+  --qoder-gray-800: #1e293b;
+  --qoder-gray-900: #0f172a;
+  
+  /* 渐变 */
+  --qoder-gradient-primary: linear-gradient(135deg, var(--qoder-primary) 0%, var(--qoder-accent) 100%);
+  --qoder-gradient-secondary: linear-gradient(135deg, var(--qoder-gray-700) 0%, var(--qoder-gray-900) 100%);
+}
+
+/* 自定义 Element Plus 主题变量 */
+:root {
+  --el-color-primary: var(--qoder-primary);
+  --el-color-primary-light-3: var(--qoder-primary-light);
+  --el-color-primary-dark-2: var(--qoder-primary-dark);
+}
+
+/* 全局样式 */
+.hero-section {
+  background: var(--qoder-gradient-primary);
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #ffffff, #e2e8f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid var(--qoder-gray-200);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.5rem;
+  background: var(--qoder-gradient-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--qoder-gray-900);
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--qoder-gray-600);
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    padding: 0 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .feature-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .download-cards .el-col {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+}
+
+/* 暗色主题适配 */
+.dark {
+  --qoder-primary: #3b82f6;
+  --qoder-primary-light: #60a5fa;
+  --qoder-primary-dark: #2563eb;
+}
+
+.dark .feature-card {
+  background: var(--vp-c-bg-soft);
+  border-color: var(--vp-c-border);
+}
+
+.dark .feature-card:hover {
+  background: var(--vp-c-bg-elv);
+}
