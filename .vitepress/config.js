@@ -54,7 +54,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: '智能编程平台',
+      message: 'qoder学习指南，非官方。',
       copyright: 'Copyright © 2025 caug.cn'
     },
 
