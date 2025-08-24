@@ -1,3 +1,46 @@
+---
+# SEO 配置
+title: "Qoder 智能代码补全 - AI 驱动的代码生成与补全功能"
+description: "Qoder 智能代码补全功能详细介绍，基于 Claude、GPT、Gemini 等 AI 模型提供精准代码建议、多行代码生成、函数签名自动生成、变量命名建议等高级功能。"
+keywords: "Qoder 代码补全, 智能代码补全, AI 代码生成, 代码建议, 自动补全, 多行代码, 函数生成, 变量命名, Claude, GPT, Gemini"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 智能代码补全 - AI 驱动的代码生成功能"
+  - - meta
+    - property: og:description
+      content: "基于 AI 的精准代码补全，支持多行代码生成和智能建议。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/code-completion
+  - - meta
+    - property: article:section
+      content: "核心功能"
+  
+  # 结构化数据
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Qoder 智能代码补全功能",
+        "description": "AI 驱动的代码生成与补全功能详细介绍",
+        "url": "https://caug.cn/docs/code-completion",
+        "datePublished": "2025-08-24",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder Team"
+        },
+        "about": "智能代码补全技术"
+      }
+---
+
 # 智能代码补全
 
 Qoder 的智能代码补全功能基于先进的 AI 技术，能够根据项目上下文提供精准的代码建议。

@@ -1,3 +1,25 @@
+---
+# SEO 配置
+title: "Qoder 常见问题 FAQ - 安装、使用、配置问题解答"
+description: "Qoder 常见问题解答，包括安装启动问题、AI 功能使用问题、性能问题、配置问题等。快速找到问题解决方案。"
+keywords: "Qoder FAQ, 常见问题, 安装问题, 使用问题, 配置问题, 问题解答, 故障排除"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 常见问题 FAQ - 问题解答和解决方案"
+  - - meta
+    - property: og:description
+      content: "常见问题解答，快速找到问题解决方案。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/faq
+---
+
 # 常见问题
 
 ## 安装和启动

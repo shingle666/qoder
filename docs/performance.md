@@ -1,3 +1,77 @@
+---
+# SEO 配置
+title: "性能优化指南 - Qoder 智能编程平台 | 应用加速、内存优化、系统调优"
+description: "Qoder 智能编程平台性能优化完整指南。包含系统优化、应用配置、内存管理、网络优化、索引优化、项目优化、性能监控和诊断工具使用方法。"
+keywords: "Qoder 性能优化, 应用加速, 内存优化, 系统调优, CPU 优化, 网络优化, 索引优化, 性能监控, 诊断工具"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "性能优化指南 - Qoder 智能编程平台"
+  - - meta
+    - property: og:description
+      content: "完整的 Qoder 性能优化指南，包含系统、应用、项目优化方法"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/performance
+  - - meta
+    - property: og:image
+      content: https://caug.cn/logo.svg
+  - - meta
+    - property: article:section
+      content: "性能优化"
+  - - meta
+    - property: article:tag
+      content: "性能"
+  - - meta
+    - property: article:tag
+      content: "优化"
+  
+  # Twitter Card
+  - - meta
+    - name: twitter:card
+      content: summary
+  - - meta
+    - name: twitter:title
+      content: "性能优化指南 - Qoder"
+  - - meta
+    - name: twitter:description
+      content: "应用加速、内存优化、系统调优完整指南"
+  
+  # 结构化数据
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "性能优化指南",
+        "description": "Qoder 智能编程平台性能优化完整指南",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Qoder",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://caug.cn/logo.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://caug.cn/docs/performance"
+        },
+        "datePublished": "2025-08-24",
+        "dateModified": "2025-08-24"
+      }
+---
+
 # 性能优化
 
 优化 Qoder 运行性能的实用指南。

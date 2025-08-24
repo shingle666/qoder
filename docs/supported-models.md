@@ -1,3 +1,46 @@
+---
+# SEO 配置
+title: "Qoder 支持的 AI 模型 - Claude、GPT-4、Gemini 等全面对比"
+description: "Qoder 支持的 AI 模型全面介绍，包括 OpenAI GPT-4 Turbo、Anthropic Claude 3.5 Sonnet、Google Gemini Pro 等。详细对比各模型的优势、性能、价格和适用场景。"
+keywords: "Qoder AI 模型, Claude 3.5 Sonnet, GPT-4 Turbo, Gemini Pro, AI 模型对比, 代码生成模型, Anthropic, OpenAI, Google AI, 智能编程模型"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 支持的 AI 模型 - Claude、GPT-4、Gemini 全面对比"
+  - - meta
+    - property: og:description
+      content: "支持 Claude 3.5、GPT-4 Turbo、Gemini Pro 等世界领先的 AI 模型。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/supported-models
+  - - meta
+    - property: article:section
+      content: "AI 模型"
+  
+  # 结构化数据
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Qoder 支持的 AI 模型",
+        "description": "Claude、GPT-4、Gemini 等 AI 模型的全面对比和介绍",
+        "url": "https://caug.cn/docs/supported-models",
+        "datePublished": "2025-08-24",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder Team"
+        },
+        "about": "AI 模型对比和选择"
+      }
+---
+
 # 支持的 AI 模型
 
 Qoder 支持业界领先的 AI 模型，为您提供最佳的代码生成和分析体验。每个模型都有其独特的优势和适用场景。

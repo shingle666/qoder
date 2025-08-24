@@ -1,3 +1,25 @@
+---
+# SEO 配置
+title: "Qoder 贡献指南 - 如何为开源项目做出贡献"
+description: "Qoder 开源项目贡献指南，包括 Bug 报告、功能建议、代码贡献、文档改进等。了解如何参与开源社区和开发流程。"
+keywords: "Qoder 贡献, 开源贡献, Bug 报告, 功能建议, 代码贡献, Pull Request, 开源社区"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 贡献指南 - 如何为开源项目做出贡献"
+  - - meta
+    - property: og:description
+      content: "开源项目贡献指南，参与社区开发和改进。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/contributing
+---
+
 # 贡献指南
 
 欢迎为 Qoder 项目做出贡献！

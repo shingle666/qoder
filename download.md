@@ -1,3 +1,86 @@
+---
+# SEO 配置
+title: "下载 Qoder - 智能编程平台 | Windows & macOS 免费下载"
+description: "免费下载 Qoder 智能编程平台最新版本。支持 Windows 10/11 和 macOS（Intel/Apple Silicon）。包含详细安装指南、系统要求、常见问题解答和文件验证方法。"
+keywords: "Qoder 下载, 智能编程平台下载, Windows 下载, macOS 下载, Apple Silicon, Intel, 安装指南, 系统要求, AI IDE 下载, 免费下载"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "下载 Qoder - 智能编程平台 | Windows & macOS 免费下载"
+  - - meta
+    - property: og:description
+      content: "免费下载 Qoder 最新版本，支持 Windows 和 macOS。包含完整安装指南。"
+  - - meta
+    - property: og:type
+      content: website
+  - - meta
+    - property: og:url
+      content: https://caug.cn/download
+  - - meta
+    - property: og:image
+      content: https://caug.cn/logo.svg
+  - - meta
+    - property: og:image:alt
+      content: "Qoder 下载页面"
+  
+  # Twitter Card
+  - - meta
+    - name: twitter:card
+      content: summary_large_image
+  - - meta
+    - name: twitter:title
+      content: "下载 Qoder - 智能编程平台"
+  - - meta
+    - name: twitter:description
+      content: "免费下载，支持 Windows & macOS"
+  
+  # 小红书分享优化
+  - - meta
+    - property: xhs:type
+      content: app
+  - - meta
+    - property: xhs:app_name
+      content: Qoder
+  - - meta
+    - property: xhs:download_url
+      content: https://caug.cn/download
+  
+  # 结构化数据 - 下载页面
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Qoder 下载",
+        "description": "Qoder 智能编程平台官方下载页面",
+        "url": "https://caug.cn/download",
+        "mainEntity": {
+          "@type": "SoftwareApplication",
+          "name": "Qoder",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": ["Windows 10", "Windows 11", "macOS"],
+          "processorRequirements": ["x64", "Apple Silicon", "Intel"],
+          "memoryRequirements": "8GB RAM",
+          "storageRequirements": "2GB",
+          "downloadUrl": [
+            "https://download.qoder.com/release/latest/QoderUserSetup-x64.exe",
+            "https://download.qoder.com/release/latest/Qoder-darwin-arm64.dmg",
+            "https://download.qoder.com/release/latest/Qoder-darwin-x64.dmg"
+          ],
+          "softwareVersion": "1.0.1",
+          "datePublished": "2025-08-24",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
+      }
+---
+
 # 下载 Qoder
 
 <div class="download-hero">

@@ -1,3 +1,25 @@
+---
+# SEO 配置
+title: "Qoder 基础概念 - 智能代理、上下文工程、任务模式详解"
+description: "Qoder 基础概念详解，包括智能代理、上下文工程、任务模式、智能记忆等核心技术。理解这些概念有助于更好地使用 Qoder。"
+keywords: "Qoder 基础概念, 智能代理, 上下文工程, 任务模式, 智能记忆, 核心技术, 概念详解"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 基础概念 - 智能代理、上下文工程详解"
+  - - meta
+    - property: og:description
+      content: "理解智能代理、上下文工程等核心技术概念。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/concepts
+---
+
 # 基础概念
 
 ## 核心概念

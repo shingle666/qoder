@@ -1,3 +1,77 @@
+---
+# SEO 配置
+title: "故障排除指南 - Qoder 智能编程平台 | 常见问题、诊断工具、问题解决"
+description: "Qoder 智能编程平台故障排除完整指南。包含启动问题、AI 功能问题、性能问题、配置问题的解决方案，以及诊断命令和获取帮助的方法。"
+keywords: "Qoder 故障排除, 常见问题, 启动问题, AI 功能问题, 性能问题, 配置问题, 诊断工具, 问题解决, 技术支持"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "故障排除指南 - Qoder 智能编程平台"
+  - - meta
+    - property: og:description
+      content: "完整的 Qoder 故障排除指南，帮助解决各种常见问题"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/troubleshooting
+  - - meta
+    - property: og:image
+      content: https://caug.cn/logo.svg
+  - - meta
+    - property: article:section
+      content: "故障排除"
+  - - meta
+    - property: article:tag
+      content: "故障排除"
+  - - meta
+    - property: article:tag
+      content: "问题解决"
+  
+  # Twitter Card
+  - - meta
+    - name: twitter:card
+      content: summary
+  - - meta
+    - name: twitter:title
+      content: "故障排除指南 - Qoder"
+  - - meta
+    - name: twitter:description
+      content: "常见问题、诊断工具、问题解决方案"
+  
+  # 结构化数据
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "故障排除指南",
+        "description": "Qoder 智能编程平台故障排除完整指南",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Qoder",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://caug.cn/logo.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://caug.cn/docs/troubleshooting"
+        },
+        "datePublished": "2025-08-24",
+        "dateModified": "2025-08-24"
+      }
+---
+
 # 故障排除
 
 ## 常见问题

@@ -1,3 +1,46 @@
+---
+# SEO 配置
+title: "Qoder 安装指南 - Windows & macOS 安装教程"
+description: "Qoder 智能编程平台详细安装指南，支持 Windows 10/11 和 macOS。包含系统要求、安装步骤、环境配置、常见问题解决方案。"
+keywords: "Qoder 安装, 智能编程平台安装, Windows 安装, macOS 安装, 系统要求, 安装教程, 环境配置, AI IDE 安装"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 安装指南 - Windows & macOS 安装教程"
+  - - meta
+    - property: og:description
+      content: "详细安装指南，支持 Windows 和 macOS，包含系统要求和安装步骤。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/installation
+  - - meta
+    - property: article:section
+      content: "安装指南"
+  
+  # 结构化数据
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Qoder 安装指南",
+        "description": "Windows 和 macOS 平台的详细安装教程",
+        "url": "https://caug.cn/docs/installation",
+        "datePublished": "2025-08-24",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder Team"
+        },
+        "about": "软件安装指南"
+      }
+---
+
 # 安装指南
 
 本指南将帮助您在 Windows 或 macOS 系统上安装 Qoder。

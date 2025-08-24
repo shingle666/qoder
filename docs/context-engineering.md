@@ -1,3 +1,25 @@
+---
+# SEO 配置
+title: "Qoder 上下文工程 - 深度理解代码库的 AI 技术"
+description: "Qoder 上下文工程技术详解，如何通过深度分析代码库结构、依赖关系和业务逻辑，提供精准的 AI 代码补全和智能建议。"
+keywords: "Qoder 上下文工程, Context Engineering, 代码库分析, 依赖关系, 智能代码分析, AI 代码理解, 项目结构分析"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 上下文工程 - 深度理解代码库的 AI 技术"
+  - - meta
+    - property: og:description
+      content: "深度分析代码库结构，提供精准的 AI 代码补全和智能建议。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/context-engineering
+---
+
 # 上下文工程
 
 ## 概述

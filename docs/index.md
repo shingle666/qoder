@@ -1,3 +1,65 @@
+---
+# SEO 配置
+title: "Qoder 文档 - 智能编程平台完整使用指南"
+description: "Qoder 智能编程平台官方文档，包含安装指南、快速开始、功能介绍、API 文档等。帮助您快速上手并充分利用 AI 代码补全、上下文工程、自动测试生成等强大功能。"
+keywords: "Qoder 文档, 智能编程指南, AI IDE 教程, 代码补全教程, 上下文工程, 自动测试, 安装指南, 快速开始, API 文档, 最佳实践, 问题解答"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 文档 - 智能编程平台完整使用指南"
+  - - meta
+    - property: og:description
+      content: "官方文档，包含安装指南、功能介绍、API 文档等。帮助您快速上手 Qoder。"
+  - - meta
+    - property: og:type
+      content: website
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/
+  - - meta
+    - property: og:image
+      content: https://caug.cn/logo.svg
+  
+  # Twitter Card
+  - - meta
+    - name: twitter:card
+      content: summary_large_image
+  - - meta
+    - name: twitter:title
+      content: "Qoder 文档 - 智能编程平台指南"
+  - - meta
+    - name: twitter:description
+      content: "官方文档，帮助您快速上手 Qoder 智能编程平台"
+  
+  # 结构化数据 - 文档首页
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Qoder 文档",
+        "description": "Qoder 智能编程平台官方文档和使用指南",
+        "url": "https://caug.cn/docs/",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "Qoder",
+          "url": "https://caug.cn"
+        },
+        "mainEntity": {
+          "@type": "TechArticle",
+          "headline": "Qoder 智能编程平台文档",
+          "about": "智能编程平台使用指南",
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "Developers"
+          }
+        }
+      }
+---
+
 # Qoder 文档
 
 欢迎使用 Qoder - 智能编程平台！本文档将帮助您快速上手并充分利用 Qoder 的强大功能。

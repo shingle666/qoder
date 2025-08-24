@@ -1,3 +1,46 @@
+---
+# SEO 配置
+title: "Qoder 高级功能 - Quest模式、智能记忆、MCP工具集成指南"
+description: "探索 Qoder 的高级功能，包括 Quest 模式异步任务处理、智能记忆系统、MCP 工具集成、自定义 AI 工作流等强大特性，提升开发效率。"
+keywords: "Qoder 高级功能, Quest 模式, 智能记忆, MCP 工具, AI 工作流, 异步任务, 工具集成, 高级特性"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 高级功能 - Quest模式、智能记忆、MCP工具集成"
+  - - meta
+    - property: og:description
+      content: "探索 Quest 模式、智能记忆、MCP 工具集成等强大的高级功能。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/advanced-features
+  - - meta
+    - property: article:section
+      content: "高级功能"
+  
+  # 结构化数据
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Qoder 高级功能指南",
+        "description": "Quest 模式、智能记忆、MCP 工具集成等高级功能使用指南",
+        "url": "https://caug.cn/docs/advanced-features",
+        "datePublished": "2025-08-24",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder Team"
+        },
+        "about": "高级功能和工具"
+      }
+---
+
 # 高级功能
 
 Qoder 的高级功能使用指南。

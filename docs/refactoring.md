@@ -1,3 +1,77 @@
+---
+# SEO 配置
+title: "代码重构指南 - Qoder 智能编程平台 | 智能重构、代码优化、提取函数"
+description: "Qoder 智能编程平台代码重构功能完整指南。包含提取函数、重命名符号、优化结构、性能优化等智能重构操作的使用方法和最佳实践。"
+keywords: "Qoder 代码重构, 智能重构, 代码优化, 提取函数, 重命名符号, 优化结构, 性能优化, 代码质量, 重构工具"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "代码重构指南 - Qoder 智能编程平台"
+  - - meta
+    - property: og:description
+      content: "智能代码重构功能，改进代码质量和结构"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/refactoring
+  - - meta
+    - property: og:image
+      content: https://caug.cn/logo.svg
+  - - meta
+    - property: article:section
+      content: "代码重构"
+  - - meta
+    - property: article:tag
+      content: "重构"
+  - - meta
+    - property: article:tag
+      content: "优化"
+  
+  # Twitter Card
+  - - meta
+    - name: twitter:card
+      content: summary
+  - - meta
+    - name: twitter:title
+      content: "代码重构指南 - Qoder"
+  - - meta
+    - name: twitter:description
+      content: "智能重构、代码优化、质量提升"
+  
+  # 结构化数据
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "代码重构指南",
+        "description": "Qoder 智能编程平台代码重构功能完整指南",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Qoder",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://caug.cn/logo.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://caug.cn/docs/refactoring"
+        },
+        "datePublished": "2025-08-24",
+        "dateModified": "2025-08-24"
+      }
+---
+
 # 代码重构
 
 ## 功能概览

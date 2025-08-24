@@ -1,3 +1,25 @@
+---
+# SEO 配置
+title: "Qoder 自动单元测试生成 - AI 驱动的测试代码生成"
+description: "Qoder 自动单元测试生成功能详解，如何使用 AI 自动创建高质量的单元测试、测试用例、Mock 对象和测试断言，提高代码质量。"
+keywords: "Qoder 单元测试, 自动测试生成, AI 测试, 测试用例, Mock 对象, 测试断言, 代码质量, 自动化测试"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 自动单元测试生成 - AI 驱动的测试代码生成"
+  - - meta
+    - property: og:description
+      content: "使用 AI 自动创建高质量的单元测试和测试用例。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/test-generation
+---
+
 # 单元测试生成
 
 ## 功能概览

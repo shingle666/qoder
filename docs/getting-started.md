@@ -1,3 +1,56 @@
+---
+# SEO 配置
+title: "Qoder 快速开始指南 - 从安装到上手使用教程"
+description: "Qoder 智能编程平台快速开始指南，包含项目创建、AI 模型配置、智能代码补全、自动测试生成等功能使用教程。适合初学者和新用户。"
+keywords: "Qoder 快速开始, 智能编程教程, AI 模型配置, 代码补全教程, 项目创建, 自动测试, 初学者指南, 上手教程, 使用指南"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 快速开始指南 - 从安装到上手使用"
+  - - meta
+    - property: og:description
+      content: "快速开始指南，包含项目创建、AI 模型配置、功能使用教程。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/getting-started
+  - - meta
+    - property: article:section
+      content: "入门教程"
+  
+  # 结构化数据 - 教程文章
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Qoder 快速开始指南",
+        "description": "从安装到上手使用的完整教程",
+        "url": "https://caug.cn/docs/getting-started",
+        "datePublished": "2025-08-24",
+        "dateModified": "2025-08-24",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder Team"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "caug.cn",
+          "url": "https://caug.cn"
+        },
+        "audience": {
+          "@type": "Audience",
+          "audienceType": "Developers"
+        },
+        "about": "智能编程平台使用教程"
+      }
+---
+
 # 快速开始
 
 欢迎使用 Qoder！本指南将带您完成首次使用 Qoder 的完整流程，从创建第一个项目到体验核心功能。

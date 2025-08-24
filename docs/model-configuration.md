@@ -1,3 +1,77 @@
+---
+# SEO 配置
+title: "AI 模型配置指南 - Qoder 智能编程平台 | GPT-4、Claude、Gemini 设置教程"
+description: "详细的 Qoder 平台 AI 模型配置指南。支持 OpenAI GPT-4、Anthropic Claude、Google Gemini 等主流模型。包含 API 密钥配置、参数调优、成本优化和使用建议。"
+keywords: "Qoder 模型配置, AI 模型设置, GPT-4 配置, Claude 配置, Gemini 配置, API 密钥, 模型参数, 成本优化, 代码生成模型"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "AI 模型配置指南 - Qoder 智能编程平台"
+  - - meta
+    - property: og:description
+      content: "支持 GPT-4、Claude、Gemini 等主流 AI 模型配置"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/model-configuration
+  - - meta
+    - property: og:image
+      content: https://caug.cn/logo.svg
+  - - meta
+    - property: article:section
+      content: "配置指南"
+  - - meta
+    - property: article:tag
+      content: "AI模型"
+  - - meta
+    - property: article:tag
+      content: "配置"
+  
+  # Twitter Card
+  - - meta
+    - name: twitter:card
+      content: summary
+  - - meta
+    - name: twitter:title
+      content: "AI 模型配置指南 - Qoder"
+  - - meta
+    - name: twitter:description
+      content: "支持 GPT-4、Claude、Gemini 等主流模型"
+  
+  # 结构化数据
+  - - script
+    - type: application/ld+json
+    - |
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "AI 模型配置指南",
+        "description": "Qoder 平台 AI 模型配置完整指南",
+        "author": {
+          "@type": "Organization",
+          "name": "Qoder"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Qoder",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://caug.cn/logo.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://caug.cn/docs/model-configuration"
+        },
+        "datePublished": "2025-08-24",
+        "dateModified": "2025-08-24"
+      }
+---
+
 # 模型配置
 
 ## 支持的模型

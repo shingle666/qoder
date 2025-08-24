@@ -1,3 +1,25 @@
+---
+# SEO 配置
+title: "Qoder 自定义工具 - 扩展功能的工具开发指南"
+description: "Qoder 自定义工具开发指南，学习如何创建代码分析工具、格式化工具、构建工具、测试工具等，扩展 Qoder 功能。"
+keywords: "Qoder 自定义工具, 工具开发, 代码分析工具, 格式化工具, 扩展功能, 自定义开发"
+
+# Open Graph 配置
+head:
+  - - meta
+    - property: og:title
+      content: "Qoder 自定义工具 - 扩展功能的工具开发指南"
+  - - meta
+    - property: og:description
+      content: "学习如何创建自定义工具，扩展 Qoder 功能。"
+  - - meta
+    - property: og:type
+      content: article
+  - - meta
+    - property: og:url
+      content: https://caug.cn/docs/custom-tools
+---
+
 # 自定义工具
 
 扩展 Qoder 功能的自定义工具开发指南。
