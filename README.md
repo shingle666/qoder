@@ -1,7 +1,6 @@
 # Qoder - 智能编程平台学习指南
 
 <div align="center">
-  <img src="public/logo.svg" alt="Qoder Logo" width="120" height="120">
   
   <h3>为真实软件开发而设计的智能代理编程平台</h3>
   
@@ -165,9 +164,6 @@ npm run serve
 4. 推送分支 (`git push origin feature/amazing-feature`)
 5. 打开 Pull Request
 
-## 📄 许可证
-
-本项目基于 ISC 许可证开源。详细信息请查看 [LICENSE](LICENSE) 文件。
 
 ## 📞 联系我们
 
