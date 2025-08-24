@@ -1,0 +1,117 @@
+# robots.txt for Qoder - 智能编程平台学习指南
+# 网站: https://caug.cn
+# 更新时间: 2025-08-24
+
+# 允许所有搜索引擎爬虫
+User-agent: *
+Allow: /
+
+# 特别允许主要搜索引擎
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# 禁止爬取的目录和文件
+Disallow: /node_modules/
+Disallow: /.vitepress/cache/
+Disallow: /.vitepress/dist/
+Disallow: /.git/
+Disallow: /.DS_Store
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+
+# 允许重要的静态资源
+Allow: /public/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.svg
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.ico
+Allow: /*.webp
+
+# 站点地图位置
+Sitemap: https://caug.cn/sitemap.xml
+
+# 爬取延迟设置（友好爬取）
+Crawl-delay: 1
+
+# 特定页面优化
+# 优先爬取重要页面
+# 首页
+User-agent: *
+Allow: /index.html
+
+# 功能特性页
+User-agent: *
+Allow: /features.html
+
+# 下载页面
+User-agent: *
+Allow: /download.html
+
+# 文档系统
+User-agent: *
+Allow: /docs/
+
+# 确保重要文件可被爬取
+Allow: /manifest.json
+Allow: /favicon.ico
+Allow: /logo.svg
+
+# 针对百度搜索引擎的特殊配置
+User-agent: Baiduspider
+Crawl-delay: 2
+Allow: /
+
+# 针对Google搜索引擎的配置
+User-agent: Googlebot
+Crawl-delay: 1
+Allow: /
+
+# 阻止已知的恶意爬虫
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# 社交媒体爬虫允许
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# 微信爬虫允许
+User-agent: WeChatShareBot
+Allow: /
+
+# 归档爬虫允许
+User-agent: ia_archiver
+Allow: /
+
+# 最后更新: 2025-08-24
+# 联系方式: https://github.com/shingle666/qoder/issues
