@@ -91,17 +91,12 @@ head:
 ## 最新版本
 
 ### Qoder v1.0.1
-发布日期：2025年08月
+发布日期：2025年08月  
 文件大小：约 150MB (Windows) / 120MB (macOS)
 
-<div class="version-info">
-  <el-alert 
-    title="最新版本已发布" 
-    type="success" 
-    description="包含最新的AI模型支持和性能优化，修复了多个已知问题。" 
-    show-icon>
-  </el-alert>
-</div>
+::: tip 最新版本已发布
+包含最新的AI模型支持和性能优化，修复了多个已知问题。
+:::
 
 ### 官方下载地址
 
@@ -116,64 +111,43 @@ head:
 
 ## 下载选项
 
-<div class="download-cards">
-  <el-row :gutter="24">
-    <el-col :span="12">
-      <el-card class="download-card">
-        <template #header>
-          <div class="platform-header">
-            <span class="platform-icon">🖥️</span>
-            <h3>Windows</h3>
-          </div>
-        </template>
-        <div class="platform-content">
-          <p><strong>系统要求：</strong></p>
-          <ul>
-            <li>Windows 10 (版本 1903) 或更高版本</li>
-            <li>Windows 11 (推荐)</li>
-            <li>8GB RAM (推荐 16GB)</li>
-            <li>2GB 可用磁盘空间</li>
-          </ul>
-          <div class="download-buttons">
-            <el-button type="primary" size="large" block onclick="window.open('https://download.qoder.com/release/latest/QoderUserSetup-x64.exe')">
-              下载 Windows 版本
-            </el-button>
-            <p class="download-note">适用于 Windows 10/11 (64位)</p>
-          </div>
-        </div>
-      </el-card>
-    </el-col>
-    
-    <el-col :span="12">
-      <el-card class="download-card">
-        <template #header>
-          <div class="platform-header">
-            <span class="platform-icon">🍎</span>
-            <h3>macOS</h3>
-          </div>
-        </template>
-        <div class="platform-content">
-          <p><strong>系统要求：</strong></p>
-          <ul>
-            <li>macOS 11.0 (Big Sur) 或更高版本</li>
-            <li>支持 Intel 和 Apple Silicon (M1/M2)</li>
-            <li>8GB RAM (推荐 16GB)</li>
-            <li>2GB 可用磁盘空间</li>
-          </ul>
-          <div class="download-buttons">
-            <el-button type="primary" size="large" block onclick="window.open('https://download.qoder.com/release/latest/Qoder-darwin-arm64.dmg')">
-              下载 Apple Silicon 版本
-            </el-button>
-            <el-button type="info" size="default" block onclick="window.open('https://download.qoder.com/release/latest/Qoder-darwin-x64.dmg')" style="margin-top: 8px;">
-              下载 Intel 版本
-            </el-button>
-            <p class="download-note">M1/M2/M3 芯片推荐 Apple Silicon 版本</p>
-          </div>
-        </div>
-      </el-card>
-    </el-col>
-  </el-row>
-</div>
+### 🖥️ Windows 版本
+
+**系统要求：**
+- Windows 10 (版本 1903) 或更高版本
+- Windows 11 (推荐)
+- 8GB RAM (推荐 16GB)
+- 2GB 可用磁盘空间
+
+**下载链接：**
+
+<a href="https://download.qoder.com/release/latest/QoderUserSetup-x64.exe" class="download-button windows" target="_blank">
+  💾 下载 Windows 版本
+</a>
+
+*适用于 Windows 10/11 (64位)*
+
+---
+
+### 🍎 macOS 版本
+
+**系统要求：**
+- macOS 11.0 (Big Sur) 或更高版本
+- 支持 Intel 和 Apple Silicon (M1/M2/M3)
+- 8GB RAM (推荐 16GB)
+- 2GB 可用磁盘空间
+
+**下载链接：**
+
+<a href="https://download.qoder.com/release/latest/Qoder-darwin-arm64.dmg" class="download-button macos" target="_blank">
+  💾 下载 Apple Silicon 版本
+</a>
+
+<a href="https://download.qoder.com/release/latest/Qoder-darwin-x64.dmg" class="download-button macos-intel" target="_blank">
+  💾 下载 Intel 版本
+</a>
+
+*M1/M2/M3 芯片推荐 Apple Silicon 版本*
 
 ## 安装指南
 
@@ -211,11 +185,13 @@ head:
 
 为确保下载文件的完整性和安全性，建议验证文件哈希值：
 
-<el-collapse>
-  <el-collapse-item title="查看文件校验值" name="checksums">
-    <p>最新版本的校验值将在 <a href="https://github.com/shingle666/qoder/releases" target="_blank">GitHub Releases</a> 页面提供。</p>
-    <p>使用以下命令验证文件完整性：</p>
-    
+<details>
+<summary>查看文件校验值</summary>
+
+最新版本的校验值将在 [GitHub Releases](https://github.com/shingle666/qoder/releases) 页面提供。
+
+使用以下命令验证文件完整性：
+
 **Windows (PowerShell):**
 ```powershell
 Get-FileHash QoderUserSetup-x64.exe -Algorithm SHA256
@@ -225,95 +201,86 @@ Get-FileHash QoderUserSetup-x64.exe -Algorithm SHA256
 ```bash
 shasum -a 256 Qoder-darwin-*.dmg
 ```
-  </el-collapse-item>
-</el-collapse>
+
+</details>
 
 ## 常见问题
 
-<el-collapse>
-  <el-collapse-item title="Windows 安装失败怎么办？" name="windows-install">
-    <ul>
-      <li>确保您有管理员权限</li>
-      <li>暂时关闭杀毒软件后重试</li>
-      <li>检查系统是否为 Windows 10 1903 或更高版本</li>
-      <li>确保有足够的磁盘空间（至少 2GB）</li>
-    </ul>
-  </el-collapse-item>
-  
-  <el-collapse-item title="macOS 提示应用已损坏？" name="macos-damaged">
-    <p>这通常是 Gatekeeper 安全机制导致的，请尝试：</p>
-    <ol>
-      <li>在终端中运行：<code>sudo xattr -rd com.apple.quarantine /Applications/Qoder.app</code></li>
-      <li>或在"安全性与隐私"设置中点击"仍要打开"</li>
-    </ol>
-  </el-collapse-item>
-  
-  <el-collapse-item title="如何选择 macOS 版本？" name="macos-version">
-    <p>检查您的 Mac 处理器类型：</p>
-    <ul>
-      <li>点击苹果菜单 > 关于本机</li>
-      <li>如果显示 "Apple M1"、"Apple M2" 或 "Apple M3"，选择 ARM64 版本</li>
-      <li>如果显示 "Intel" 处理器，选择 x64 版本</li>
-    </ul>
-  </el-collapse-item>
-  
-  <el-collapse-item title="首次启动很慢是正常的吗？" name="first-launch">
-    <p>是的，首次启动时 Qoder 会：</p>
-    <ul>
-      <li>初始化工作环境</li>
-      <li>下载必要的语言模型文件</li>
-      <li>配置默认设置</li>
-    </ul>
-    <p>这个过程通常需要 2-5 分钟，请耐心等待。</p>
-  </el-collapse-item>
-</el-collapse>
+<details>
+<summary>Windows 安装失败怎么办？</summary>
+
+- 确保您有管理员权限
+- 暂时关闭杀毒软件后重试
+- 检查系统是否为 Windows 10 1903 或更高版本
+- 确保有足够的磁盘空间（至少 2GB）
+
+</details>
+
+<details>
+<summary>macOS 提示应用已损坏？</summary>
+
+这通常是 Gatekeeper 安全机制导致的，请尝试：
+
+1. 在终端中运行：`sudo xattr -rd com.apple.quarantine /Applications/Qoder.app`
+2. 或在"安全性与隐私"设置中点击"仍要打开"
+
+</details>
+
+<details>
+<summary>如何选择 macOS 版本？</summary>
+
+检查您的 Mac 处理器类型：
+
+- 点击苹果菜单 > 关于本机
+- 如果显示 "Apple M1"、"Apple M2" 或 "Apple M3"，选择 ARM64 版本
+- 如果显示 "Intel" 处理器，选择 x64 版本
+
+</details>
+
+<details>
+<summary>首次启动很慢是正常的吗？</summary>
+
+是的，首次启动时 Qoder 会：
+
+- 初始化工作环境
+- 下载必要的语言模型文件
+- 配置默认设置
+
+这个过程通常需要 2-5 分钟，请耐心等待。
+
+</details>
 
 ## 其他下载方式
 
 ### 包管理器安装
 
-<el-tabs>
-  <el-tab-pane label="Homebrew (macOS)" name="homebrew">
-    
-```bash
+::: code-group
+
+```bash [Homebrew (macOS)]
 brew install qoder
 ```
 
-  </el-tab-pane>
-  
-  <el-tab-pane label="Chocolatey (Windows)" name="chocolatey">
-    
-```bash
+```bash [Chocolatey (Windows)]
 choco install qoder
 ```
 
-  </el-tab-pane>
-  
-  <el-tab-pane label="Scoop (Windows)" name="scoop">
-    
-```bash
+```bash [Scoop (Windows)]
 scoop install qoder
 ```
 
-  </el-tab-pane>
-</el-tabs>
+:::
 
 ### 开发版本
 
 如果您想体验最新的功能，可以下载开发版本：
 
-<el-alert 
-  title="注意" 
-  type="warning" 
-  description="开发版本可能包含未完成的功能和已知问题，仅建议开发者使用。"
-  show-icon>
-</el-alert>
+::: warning 注意
+开发版本可能包含未完成的功能和已知问题，仅建议开发者使用。
+:::
 
-<div style="margin-top: 1rem;">
-  <el-button type="warning" plain onclick="window.open('https://github.com/shingle666/qoder/releases')">
-    查看开发版本
-  </el-button>
-</div>
+<a href="https://github.com/shingle666/qoder/releases" class="download-button dev" target="_blank">
+  ⚠️ 查看开发版本
+</a>
 
 ## 更新历史
 
@@ -367,43 +334,17 @@ scoop install qoder
 
 遇到安装或使用问题？我们提供多种支持方式：
 
-<el-row :gutter="16">
-  <el-col :span="8">
-    <el-card>
-      <template #header>
-        <span>📖 文档</span>
-      </template>
-      <p>查看详细的安装和使用指南</p>
-      <el-button type="primary" text @click="$router.push('/docs/')">
-        查看文档
-      </el-button>
-    </el-card>
-  </el-col>
-  
-  <el-col :span="8">
-    <el-card>
-      <template #header>
-        <span>💬 社区</span>
-      </template>
-      <p>加入我们的开发者社区</p>
-      <el-button type="primary" text>
-        访问论坛
-      </el-button>
-    </el-card>
-  </el-col>
-  
-  <el-col :span="8">
-    <el-card>
-      <template #header>
-        <span>🐛 问题反馈</span>
-      </template>
-      <p>报告 Bug 或请求新功能</p>
-      <el-button type="primary" text onclick="window.open('https://github.com/shingle666/qoder/issues')">
-        GitHub Issues
-      </el-button>
-    </el-card>
-  </el-col>
-</el-row>
+### 📖 文档
+查看详细的安装和使用指南
+- [查看文档](/docs/)
+
+### 💬 社区
+加入我们的开发者社区
+- [访问论坛](https://forum.qoder.com)
+
+### 🐛 问题反馈
+报告 Bug 或请求新功能
+- [GitHub Issues](https://github.com/shingle666/qoder/issues)
 
 <style scoped>
 .download-hero {
@@ -425,38 +366,86 @@ scoop install qoder
   opacity: 0.9;
 }
 
-.version-info {
-  margin: 2rem 0;
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 8px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #2563eb;
 }
 
-.download-cards {
-  margin: 3rem 0;
+.download-button:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+  transform: translateY(-2px);
+  color: white;
 }
 
-.download-card {
-  height: 100%;
+.download-button.windows {
+  background: #0078d4;
+  border-color: #0078d4;
 }
 
-.platform-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.download-button.windows:hover {
+  background: #106ebe;
+  border-color: #106ebe;
 }
 
-.platform-icon {
-  font-size: 1.5rem;
+.download-button.macos {
+  background: #007aff;
+  border-color: #007aff;
 }
 
-.platform-content ul {
+.download-button.macos:hover {
+  background: #0056cc;
+  border-color: #0056cc;
+}
+
+.download-button.macos-intel {
+  background: #34c759;
+  border-color: #34c759;
+}
+
+.download-button.macos-intel:hover {
+  background: #28a745;
+  border-color: #28a745;
+}
+
+.download-button.dev {
+  background: #ff9500;
+  border-color: #ff9500;
+}
+
+.download-button.dev:hover {
+  background: #e8831e;
+  border-color: #e8831e;
+}
+
+details {
   margin: 1rem 0;
-  padding-left: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
 }
 
-.download-buttons {
-  margin-top: 2rem;
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem 0;
 }
 
-.download-buttons .el-button + .el-button {
-  margin-top: 0.5rem;
+details summary:hover {
+  color: #2563eb;
+}
+
+details[open] summary {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
 }
 </style>

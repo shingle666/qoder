@@ -147,7 +147,11 @@ Qoder 支持所有主要编程语言的基础代码补全功能。
 - 使用适当的类型注解
 - 定期更新项目索引
 - 排除不必要的大型文件
-// TypeScript
+
+### 类型注解示例
+
+**TypeScript:**
+```typescript
 interface User {
   id: number;
   name: string;
@@ -156,106 +160,21 @@ interface User {
 
 function createUser(userData: Partial<User>): User {
   // 智能补全会识别 userData 的属性
+  return {
+    id: userData.id || 0,
+    name: userData.name || '',
+    email: userData.email || ''
+  };
 }
 ```
 
+**Python:**
 ```python
-# Python
 from typing import List, Dict, Optional
 
 def process_users(users: List[Dict[str, str]]) -> Optional[List[str]]:
     # 智能补全会识别 users 的类型
-    pass
-```
-
-### 3. JSDoc 注释
-使用 JSDoc 提供更好的补全信息：
-
-```javascript
-/**
- * 计算两点之间的距离
- * @param {number} x1 - 第一个点的 x 坐标
- * @param {number} y1 - 第一个点的 y 坐标
- * @param {number} x2 - 第二个点的 x 坐标
- * @param {number} y2 - 第二个点的 y 坐标
- * @returns {number} 两点之间的距离
- */
-function calculateDistance(x1, y1, x2, y2) {
-  return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
-}
-```
-
-### 4. 导入管理
-保持清晰的导入结构：
-
-```javascript
-// 按类型分组导入
-import React, { useState, useEffect } from 'react';
-import { Button, Input } from 'antd';
-import { validateEmail } from '../utils/validation';
-import { UserService } from '../services/userService';
-```
-
-## 代码片段
-
-Qoder 支持自定义代码片段：
-
-### 创建片段
-```json
-{
-  "React Functional Component": {
-    "prefix": "rfc",
-    "body": [
-      "import React from 'react';",
-      "",
-      "const ${1:ComponentName} = () => {",
-      "  return (",
-      "    <div>",
-      "      ${2:content}",
-      "    </div>",
-      "  );",
-      "};",
-      "",
-      "export default ${1:ComponentName};"
-    ],
-    "description": "React 函数组件模板"
-  }
-}
-```
-
-### 内置片段
-Qoder 提供常用的代码片段：
-
-- **JavaScript**: `if`, `for`, `function`, `class`, `try-catch`
-- **React**: `useState`, `useEffect`, `component`, `props`
-- **Python**: `if`, `for`, `class`, `def`, `try-except`
-- **Java**: `class`, `method`, `if`, `for`, `try-catch`
-
-## 性能优化
-
-### 索引优化
-Qoder 会在后台为项目建立索引：
-
-1. **初始索引**: 首次打开项目时建立
-2. **增量索引**: 文件变更时更新
-3. **缓存机制**: 缓存常用的补全结果
-4. **内存管理**: 智能管理内存使用
-
-### 大型项目优化
-对于大型项目，可以：
-
-1. **排除目录**: 在 `.qoderignore` 中排除不需要索引的目录
-2. **分级加载**: 优先索引当前工作区域
-3. **后台处理**: 利用空闲时间进行索引
-4. **缓存策略**: 智能缓存高频使用的补全
-
-```bash
-# .qoderignore 示例
-node_modules/
-dist/
-build/
-*.log
-.git/
+    return [user['name'] for user in users if 'name' in user]
 ```
 
 ## 故障排除
@@ -281,7 +200,6 @@ build/
 4. 调整索引线程数量
 
 ### 诊断工具
-使用内置的诊断工具：
 
 ```bash
 # 检查索引状态
@@ -292,26 +210,8 @@ qoder index rebuild
 
 # 清理缓存
 qoder cache clear
-
-# 性能分析
-qoder performance analyze
 ```
 
-## 反馈和改进
+## 总结
 
-### 提供反馈
-- **正确建议**: 使用 👍 标记有用的建议
-- **错误建议**: 使用 👎 标记无关的建议
-- **缺失建议**: 报告期望但未显示的建议
-
-### 自定义模型
-企业用户可以基于自己的代码库训练专用模型：
-
-1. **数据收集**: 收集项目代码和使用模式
-2. **模型训练**: 基于项目特点训练模型
-3. **部署集成**: 将自定义模型集成到 Qoder
-4. **持续优化**: 基于使用反馈持续改进
-
----
-
-通过充分利用 Qoder 的智能代码补全功能，您可以显著提高编程效率和代码质量。
+通过充分利用 Qoder 的智能代码补全功能，您可以显著提高编程效率和代码质量。记住定期更新和优化您的项目配置，以获得最佳的代码补全体验。
