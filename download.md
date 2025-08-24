@@ -8,16 +8,28 @@
 ## 最新版本
 
 ### Qoder v1.0.1
-发布日期：2024年12月
+发布日期：2025年08月
+文件大小：约 150MB (Windows) / 120MB (macOS)
 
 <div class="version-info">
   <el-alert 
     title="最新版本已发布" 
     type="success" 
-    description="包含最新的AI模型支持和性能优化。" 
+    description="包含最新的AI模型支持和性能优化，修复了多个已知问题。" 
     show-icon>
   </el-alert>
 </div>
+
+### 官方下载地址
+
+基于 README.md 提供的官方下载链接：
+
+**macOS 版本：**
+- Apple Silicon (M1/M2/M3): `https://download.qoder.com/release/latest/Qoder-darwin-arm64.dmg`
+- Intel 处理器: `https://download.qoder.com/release/latest/Qoder-darwin-x64.dmg`
+
+**Windows 版本：**
+- 64位系统: `https://download.qoder.com/release/latest/QoderUserSetup-x64.exe`
 
 ## 下载选项
 
@@ -40,12 +52,10 @@
             <li>2GB 可用磁盘空间</li>
           </ul>
           <div class="download-buttons">
-            <el-button type="primary" size="large" block>
+            <el-button type="primary" size="large" block onclick="window.open('https://download.qoder.com/release/latest/QoderUserSetup-x64.exe')">
               下载 Windows 版本
             </el-button>
-            <el-button type="info" size="small" plain>
-              下载便携版
-            </el-button>
+            <p class="download-note">适用于 Windows 10/11 (64位)</p>
           </div>
         </div>
       </el-card>
@@ -68,12 +78,13 @@
             <li>2GB 可用磁盘空间</li>
           </ul>
           <div class="download-buttons">
-            <el-button type="primary" size="large" block>
-              下载 macOS 版本
+            <el-button type="primary" size="large" block onclick="window.open('https://download.qoder.com/release/latest/Qoder-darwin-arm64.dmg')">
+              下载 Apple Silicon 版本
             </el-button>
-            <el-button type="info" size="small" plain>
-              通过 Homebrew 安装
+            <el-button type="info" size="default" block onclick="window.open('https://download.qoder.com/release/latest/Qoder-darwin-x64.dmg')" style="margin-top: 8px;">
+              下载 Intel 版本
             </el-button>
+            <p class="download-note">M1/M2/M3 芯片推荐 Apple Silicon 版本</p>
           </div>
         </div>
       </el-card>
@@ -123,18 +134,20 @@ scoop install qoder
 </el-alert>
 
 <div style="margin-top: 1rem;">
-  <el-button type="warning" plain>下载开发版本</el-button>
+  <el-button type="warning" plain onclick="window.open('https://github.com/shingle666/qoder/releases')">
+    查看开发版本
+  </el-button>
 </div>
 
 ## 更新历史
 
-### v1.0.1 (2024-12-01)
+### v1.0.1 (2025-08-24)
 - 🔧 修复了代码补全的性能问题
 - ✨ 新增对 Gemini Pro 模型的支持
 - 🐛 修复了 macOS 上的内存泄漏问题
 - 📝 改进了文档生成功能
 
-### v1.0.0 (2024-11-15)
+### v1.0.0 (2025-08-22)
 - 🎉 首次正式发布
 - 🤖 集成 Claude 3.5 Sonnet 和 GPT-4 Turbo
 - 🧠 完整的上下文工程功能
@@ -176,7 +189,7 @@ scoop install qoder
         <span>🐛 问题反馈</span>
       </template>
       <p>报告 Bug 或请求新功能</p>
-      <el-button type="primary" text>
+      <el-button type="primary" text onclick="window.open('https://github.com/shingle666/qoder/issues')">
         GitHub Issues
       </el-button>
     </el-card>
